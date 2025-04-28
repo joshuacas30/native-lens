@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "MyNewApp",
+    "slug": "MyNewApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to access your camera"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA"
+      ],
+      "package": "com.nativelens",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyA_kdnKlO3iMBmcaidkomXf19qpueQ1aPI"
+        }
+      },
+      "networkSecurityConfig": {
+        "usescleartextTraffic": true,
+        "domainConfigs": [
+          {
+            "domains": ["13.236.119.181"],
+            "includeSubdomains": true
+          }
+        ]
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      "react-native-vision-camera"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "cf6ab283-ad14-4010-91b1-252108edb06d"
+      },
+      "API_URL": "http://13.236.119.181:5000"
+    }
+  }
+}
