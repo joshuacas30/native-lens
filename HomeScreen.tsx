@@ -9,7 +9,7 @@ const { width } = Dimensions.get("window");
 
 const HomeScreen = () => {
  
-
+// this is the home screen
   return (
     <ImageBackground
       source={require("./assets/images/homescreen-background.png")} // Replace with your background image
